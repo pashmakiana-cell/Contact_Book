@@ -1,3 +1,5 @@
+from tabulate import tabulate
+
 class ContactBook:
     """
     A class used to represent a Contact Book.
@@ -26,13 +28,12 @@ class ContactBook:
         if not self.contacts:
             print("There are no contacts yet.")
         else:
-            for name, info in self.contacts.items():
-                print("-----------------------")
-                print("name:", name)
-                print("phone:", info['phone'])
-                print("email:", info['email'])
-                print("-----------------------")
-
+            table_data = [
+                [name, info['phone'], info['email']]
+                for name, info in self.contacts.items()
+            ]
+            print(tabulate(table_data, headers=['Name', 'Phone', 'Email'], tablefmt='grid'))
+            
     def edit_contact(self, name: str, new_name=None, phone=None, email=None):
         """
         Edits an existing contact in the contact book.
