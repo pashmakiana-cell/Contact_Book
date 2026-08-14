@@ -9,6 +9,11 @@
 </p>
 
 ---
+## 🚀 Live Demo
+
+Try the application online:
+
+Contact Book — Streamlit App
 
 ## ✨ Features
 
