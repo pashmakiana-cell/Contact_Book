@@ -13,7 +13,7 @@
 
 Try the application online:
 
-Contact Book — Streamlit App
+[Contact Book — Streamlit App](https://pashmakiana-contactbook.streamlit.app/)
 
 ## ✨ Features
 
