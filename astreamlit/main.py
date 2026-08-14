@@ -1,4 +1,11 @@
 import streamlit as st
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from solutions.src.main import ContactBook
 
 from solutions.src.main import ContactBook
 
